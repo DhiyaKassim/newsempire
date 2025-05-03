@@ -1,0 +1,22 @@
+function addLink() {
+    const title = prompt("Enter the link title:");
+    let url = prompt("Enter the link URL:");
+    const author = prompt("Enter the author’s name:");
+
+    if (!title || !url || !author) {
+        alert("All fields (title, URL, and author) are required.");
+        return;
+    }
+
+    // Ensure URL starts with http:// or https://
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        url = "http://" + url;
+    }
+
+    links.push({ title, url, author });
+
+    alert(`Link added:\n"${title}"\n${url}\nby ${author}`);
+
+    // Immediately show the updated list
+    showLinks();
+}
