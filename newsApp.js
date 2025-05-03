@@ -88,6 +88,26 @@ function removeLink() {
     links.splice(index, 1);
     alert("Link removed successfully!");
 }
+// Preloaded sample links
+links.push(
+    {
+        title: "The New York Times",
+        url: "https://www.nytimes.com",
+        author: "NYT Staff"
+    },
+    {
+        title: "BBC News",
+        url: "https://www.bbc.com/news",
+        author: "BBC"
+    },
+    {
+        title: "Al Jazeera",
+        url: "https://www.aljazeera.com",
+        author: "AJ News Team"
+    }
+);
 
 // Start the app
 showMenu();
+
+
