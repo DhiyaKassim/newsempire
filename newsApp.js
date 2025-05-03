@@ -1,5 +1,23 @@
 // Array to store links
 const links = [];
+// Preloaded sample links
+links.push(
+    {
+        title: "The New York Times",
+        url: "https://www.nytimes.com",
+        author: "NYT Staff"
+    },
+    {
+        title: "BBC News",
+        url: "https://www.bbc.com/news",
+        author: "BBC"
+    },
+    {
+        title: "Al Jazeera",
+        url: "https://www.aljazeera.com",
+        author: "AJ News Team"
+    }
+);
 
 // Function to show the main menu
 function showMenu() {
